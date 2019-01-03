@@ -17,6 +17,9 @@ for i in range(int(input())):
         temp = arr[pos_i]
         arr[pos_i] = arr[pos_j]
         arr[pos_j] = temp
+        #print(arr)
+        fn_lst = arr[0:pos_i+1]+sorted(arr[pos_i+1:])
+        #print(fn_lst)
         for i in range(len(arr)):
-                print(arr[i],end="")
+                print(fn_lst[i],end="")
         print()
